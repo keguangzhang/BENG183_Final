@@ -1,7 +1,7 @@
 # Ribosome Profiling
 
 ## Procedures
-**DNA library Preparation**
-Similar to the preparation for the DNA library of RAN-seq, that of ribosome also requires cell lysis, purification of mRNA, and reverse transcription
+**DNA library Preparation**    
+Similar to RNA-seq, the preparation of ribosome profiling libraries requires cell lysis, mRNA purification, and reverse transcription.
 
 **Data Analysis**
