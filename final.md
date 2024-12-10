@@ -35,10 +35,12 @@ The creation of ncRNA indices and the alignment to the indices can be done using
    ```
 The steps after this vary depending on the purpose of the analysis, for example,
 
-To detect the change in translation efficiency, both the reads from ribosome profiling and mRNA seq would be mapped to CDS regions and exons using featureCounts, and by using a package called RiboDiff, the ratio between the counts of  ribosome profiling reads and RNA-seq reads of each CDS or exon would be calculated and compared between different treatments (manual of RiboDiff: [link](https://github.com/ratschlab/RiboDiff)). 
+To detect the change in translation efficiency, both the reads from ribosome profiling and mRNA seq would be mapped to CDS regions and exons using featureCounts, and by using a package called RiboDiff, the ratio between the counts of  ribosome profiling reads and RNA-seq reads of each CDS or exon would be calculated and compared between different treatments ([manual of RiboDiff](https://github.com/ratschlab/RiboDiff)). 
 
 
 To determine ribosome distribution, a count array (lists that record the number of reads that are mapped to each codon of a transcript), would be generated with the bam file resulting from the genome alignment along with GTF genome annotation file using a package called Plastid. By using LOESS smoothing with the count array, we can then calculate cumulative ribosome distribution on transcripts (manual of Plastid: [link](https://plastid.readthedocs.io/en/latest/generated/plastid.html); manual of LOESS: [link](https://pypi.org/project/loess/#documentation))
+
+Ever since the introduction of ribosome profiling by Ingolia et al. in 2009, the application of ribosome profiling data has been continually growing, to better integrate the data, RiboSeq.Org, was recently introduced. This web browser portal curates tens of thousands of datasets from many studies and provides various data analysis and visualization tools (The link to the portal: https://rdp.ucc.ie/home ). 
 
 
 
