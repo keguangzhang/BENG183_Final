@@ -23,8 +23,8 @@ The graph below shows an overview of a STAR Protocol of ribosome profiling data 
 3) Read alignment: to further eliminate contamination from ncRNA, the raw reads need to be first aligned to the ncRNA reference genome, and discard the aligned reads 
 The creation of ncRNA indices and the alignment to the indices can be done using bowtie2:
     '''
-    > bowtie2-build <reference_ncRNA_sequences.fa> <prefix_of_output files>
-    > bowtie2 -L <seed_substring_length> --un=<path_where_unmatched_reads_would_be_saved> -x <reference_ncRNA_indices> > <output.sam>
+    bowtie2-build <reference_ncRNA_sequences.fa> <prefix_of_output files>
+    bowtie2 -L <seed_substring_length> --un=<path_where_unmatched_reads_would_be_saved> -x <reference_ncRNA_indices> > <output.sam>
     '''
 
 ![1](ribowet.jpeg){: width="50%"}.
