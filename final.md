@@ -16,4 +16,4 @@ The mRNA sequences are now obtained. The next steps are to sequence them.
 **Data Analysis**
 The bioinformatics data analysis of ribosome profiling has many overlaps with that of RNA-seq, and many pipelines and packages have been established for different analysis purposes. 
 The graph below shows an overview of a STAR Protocol of ribosome profiling data analysis pipeline specialized in ribosome pausing analysis (link to this paper [link](https://star-protocols.cell.com/protocols/1899)):
-![Drag Racing](ribowet.jpeg){width="200"}
+![1](ribowet.jpeg){width="200"}.
