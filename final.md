@@ -13,8 +13,8 @@ The mRNA sequences are now obtained. The next steps are to sequence them.
 7) Among the cDNA reverse transcription products, many are rRNA contamination that needed to be eliminated by hybridizing them with biotinylated sense strand oligonucleotides and then treating with streptavidin which would bind to the biotin. Note that contamination may be still present after this step, further elimination of this contamination would need to be done in the later bioinformatics data analysis.
 8) The rest of the cDNA would next be PCR amplified to create a ribosome footprint library.
 
-     
-**Data Analysis**  
+  
+### Data Analysis  
 The bioinformatics data analysis of ribosome profiling has many overlaps with that of RNA-seq, and many pipelines and packages have been established for different analysis purposes. 
 The graph below shows an overview of a STAR Protocol of ribosome profiling data analysis pipeline specialized in ribosome pausing analysis ([link to this paper](https://star-protocols.cell.com/protocols/1899)):
 1) Preparation: raw read fastq files and reference genome of the species need to be downloaded (previously published datasets can be downloaded from SRA). 
