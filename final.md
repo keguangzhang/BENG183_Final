@@ -28,4 +28,9 @@ The creation of ncRNA indices and the alignment to the indices can be done using
    bowtie2-build <reference_ncRNA_sequences.fa> <prefix_of_output_files>
    bowtie2 -L <seed_substring_length> --un=<path_where_unmatched_reads_would_be_saved> -x <reference_ncRNA_indices> > <output.sam>
    ```
+   We next use the rest of the reads to align to the reference genome. We can use STAR for the creation of reference genome indices and the alignment with a GTF annotation file:
+   ```
+   STAR --runMode genomeGenerate --genomeDir <reference_genome_directory> --genomeFastaFiles <reference_genome.fa> --sjdbGTFfile     <annotation_file.gtf>
+   STAR --genomeDir <path_to_reference_genome_indices> --readFilesIn <input_reads.fastq> --outFileNamePrefix      <prefix_of_output_file> --outSAMtype BAM SortedByCoordinate
+   ```
 
