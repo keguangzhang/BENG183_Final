@@ -13,7 +13,8 @@ The mRNA sequences are now obtained. The next steps are to sequence them.
 7) Among the cDNA reverse transcription products, many are rRNA contamination that needed to be eliminated by hybridizing them with biotinylated sense strand oligonucleotides and then treating with streptavidin which would bind to the biotin. Note that contamination may be still present after this step, further elimination of this contamination would need to be done in the later bioinformatics data analysis.
 8) The rest of the cDNA would next be PCR amplified to create a ribosome footprint library.
 
-  
+
+    
 ### Data Analysis  
 The bioinformatics data analysis of ribosome profiling has many overlaps with that of RNA-seq, and many pipelines and packages have been established for different analysis purposes. 
 The graph below shows an overview of a STAR Protocol of ribosome profiling data analysis pipeline specialized in ribosome pausing analysis ([link to this paper](https://star-protocols.cell.com/protocols/1899)):
@@ -33,10 +34,11 @@ The creation of ncRNA indices and the alignment to the indices can be done using
    STAR --runMode genomeGenerate --genomeDir <reference_genome_directory> --genomeFastaFiles <reference_genome.fa> --sjdbGTFfile     <annotation_file.gtf>
    STAR --genomeDir <path_to_reference_genome_indices> --readFilesIn <input_reads.fastq> --outFileNamePrefix           <prefix_of_output_file> --outSAMtype BAM SortedByCoordinate
    ```
-4) The steps after this vary depending on the purpose of the analysis, for example, To detect the change in translation efficiency, both the reads from ribosome profiling and mRNA seq would be mapped to CDS regions and exons using featureCounts, and by using a package called RiboDiff, the ratio between the counts of  ribosome profiling reads and RNA-seq reads of each CDS or exon would be calculated and compared between different treatments ([manual of RiboDiff](https://github.com/ratschlab/RiboDiff)). 
+4) The steps after this vary depending on the purpose of the analysis, for example, <br>To detect the change in translation efficiency, both the reads from ribosome profiling and mRNA seq would be mapped to CDS regions and exons using featureCounts, and by using a package called RiboDiff, the ratio between the counts of  ribosome profiling reads and RNA-seq reads of each CDS or exon would be calculated and compared between different treatments ([manual of RiboDiff](https://github.com/ratschlab/RiboDiff)). 
 To determine ribosome distribution, a count array (lists that record the number of reads that are mapped to each codon of a transcript), would be generated with the bam file resulting from the genome alignment along with GTF genome annotation file using a package called Plastid. By using LOESS smoothing with the count array, we can then calculate cumulative ribosome distribution on transcripts ([manual of Plastid](https://plastid.readthedocs.io/en/latest/generated/plastid.html); [manual of LOESS](https://pypi.org/project/loess/#documentation))  
 
-  
+
+    
 Ever since the introduction of ribosome profiling by Ingolia et al. in 2009, the application of ribosome profiling data has been continually growing, to better integrate the data, RiboSeq.Org, was recently introduced. This web browser portal curates tens of thousands of datasets from many studies and provides various data analysis and visualization tools ([link to the portal](https://rdp.ucc.ie/home)). 
 
 
