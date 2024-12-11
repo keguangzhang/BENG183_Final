@@ -71,8 +71,27 @@ The creation of ncRNA indices and the alignment to the indices can be done using
 <br>To determine ribosome distribution, a count array (lists that record the number of reads that are mapped to each codon of a transcript), would be generated with the bam file resulting from the genome alignment along with GTF genome annotation file using a package called Plastid. By using LOESS smoothing with the count array, we can then calculate cumulative ribosome distribution on transcripts ([manual of Plastid](https://plastid.readthedocs.io/en/latest/generated/plastid.html); [manual of LOESS](https://pypi.org/project/loess/#documentation))  
 
 
-> Ever since the introduction of ribosome profiling by Ingolia et al. in 2009, the application of ribosome profiling data has been continually growing, to better integrate the data, RiboSeq.Org, was recently introduced. This web browser portal curates tens of thousands of datasets from many studies and provides various data analysis and visualization tools ([link to the portal](https://rdp.ucc.ie/home)). 
+> Ever since the introduction of ribosome profiling by Ingolia et al. in 2009, the application of ribosome profiling data has been continually growing, to better integrate the data, RiboSeq.Org, was recently introduced. This web browser portal curates tens of thousands of datasets from many studies and provides various data analysis and visualization tools ([link to the portal](https://rdp.ucc.ie/home)).
 
+## Advantages, Limitations, and Future Perspectives
+
+### Advantages
+
+- High Sensitivity and Precision: Codon-level resolution of translation.
+
+- Dynamic Measurements: Captures real-time translation events.
+
+- Broad Applicability: Versatile across different organisms and contexts.
+
+### Limitations
+
+- Experimental Artifacts: Potential biases from nuclease digestion and sequencing.
+
+- Dependency on RNA-Seq: Requires complementary data for translation efficiency calculations.
+
+- Data Complexity: High computational demands for analysis.
+
+### Future Perspectives
 
 # Reference
 ## Papers:
