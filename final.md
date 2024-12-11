@@ -96,6 +96,9 @@ The creation of ncRNA indices and the alignment to the indices can be done using
 
 - Data Complexity: High computational demands for analysis.
 
+### Conclusion
+Ribosome profiling has transformed our understanding of protein synthesis and translational control. By bridging the gap between mRNA and protein, it has revealed intricate details of gene expression regulation. As technologies advance, ribosome profiling will continue to shape the future of molecular and cellular biology, with profound implications for research and medicine.
+
 # Reference
 ## Papers:
 Bao Y, Zhai J, Chen H, Wong CC, Liang C, Ding Y, et al. Targeting m(6)A reader YTHDF1 augments antitumour immunity and boosts anti-PD-1 efficacy in colorectal cancer. Gut. 2023;72(8):1497–509.
