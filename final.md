@@ -40,6 +40,7 @@ Facilitate the development of drugs targeting ribosomes or translation factors. 
 6. Integration with Other Technologies
 
 When combined with CRISPR-Cas9 and proteomics, ribosome profiling provides deeper insights into gene function and regulatory networks. This integration allows for precise modulation of translational machinery, offering potential in synthetic biology and personalized medicine.
+
 ## Procedures
 ### DNA library Preparation     
 Similar to RNA-seq, the preparation of ribosome profiling libraries requires cell lysis, mRNA purification, and reverse transcription. Here's an overview of the steps:
@@ -90,3 +91,11 @@ Keegan Flanagan, Wanxin Li, Ethan J. Greenblatt, Khanh Dao Duc,End-to-end pipeli
 Mingso Sherma Limbu, Tianze Xiong, Sufang Wang, A review of Ribosome profiling and tools used in Ribo-seq data analysis, Computational and Structural Biotechnology Journal, Volume 23, 2024, Pages 1912-1918, ISSN 2001-0370, https://doi.org/10.1016/j.csbj.2024.04.051.
 
 Jack A S Tierney, Michał I Świrski, Håkon Tjeldnes, Anmol M Kiran, Gionmattia Carancini, Stephen J Kiniry, Audrey M Michel, Joanna Kufel, Eivind Valen, Pavel V Baranov, RiboSeq.Org: an integrated suite of resources for ribosome profiling data analysis and visualization, Nucleic Acids Research, 2024;, gkae1020, https://doi.org/10.1093/nar/gkae1020
+
+## Websites:
+https://github.com/ratschlab/RiboDiff <br>
+https://plastid.readthedocs.io/en/latest/generated/plastid.html <br>
+https://pypi.org/project/loess/#documentation <br>
+https://rdp.ucc.ie/home
+
+
